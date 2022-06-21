@@ -34,14 +34,10 @@ plugins: ['jekyll/scholar']
 
 # Bibliography settings
 scholar:
-  # style: american-meteorological-society
   locale: en
 
   sort_by: year, month
   order: ascending
-
-  source: ./
-  bibliography: bibliography.bib
 
   replace_strings: true
   join_strings:    true
