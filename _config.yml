@@ -29,8 +29,28 @@ github_username:  cisaacstern
 
 # Build settings
 theme: minima
-# plugins:
-  # - jekyll-feed
+plugins: ['jekyll/scholar']
+
+
+# Bibliography settings
+scholar:
+  # style: american-meteorological-society
+  locale: en
+
+  sort_by: year, month
+  order: ascending
+
+  source: ./
+  bibliography: bibliography.bib
+
+  replace_strings: true
+  join_strings:    true
+
+  # details_dir:    bibliography
+  # details_layout: bibtex.html
+  # details_link:   Details
+
+  query: "@*"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
